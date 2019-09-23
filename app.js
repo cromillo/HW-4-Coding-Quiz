@@ -1,11 +1,13 @@
 let question = document.querySelector('#question');
 let button = document.querySelector('#start-button');
 let answerButtons = document.querySelectorAll('.answer-choice');
+let scoreTotal = document.querySelector('#score');
 let number = 0;
 let quiz = document.querySelector('#quiz');
 let h1 = document.querySelector('#heading');
 let instructions = document.querySelector('#instructions');
-let score = document.querySelector("#score");
+let score = 0
+
 
 
 button.addEventListener('click', function() {
@@ -40,8 +42,11 @@ function changeQuestionText(text) {
 function checkAnswer(e) {
     if(data[number].correct === e.target.textContent) {
         console.log('Right!');
-        console.log('Increment Score');
-        //TODO: Increment the score
+        console.log('Increment Scores');
+        score++;
+        console.log("score", score)
+        scoreTotal.textContent = score;
+ 
     } else {
         console.log('Wrong!');
         console.log('Timer decreased by 3 seconds');
@@ -55,3 +60,5 @@ function checkAnswer(e) {
 function hideStartButton() {
     button.classList.add('hide-btn');
 }
+
+

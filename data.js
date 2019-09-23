@@ -10,9 +10,9 @@ let data = [
         correct: 'D'
     },
     {
-        question: 'What are variables used for in JavaScript Programs?',
-        answers:['storing numbers,dates, or other values','varying randomly','causing high-school algrebra flashbacks','none of the above'],
-        correct: 'storing numbers, dates, or other values'
+        question: 'JavaScript is a _________ language.',
+        answers:['scripting','programming','application','scripting & programming'],
+        correct: 'scripting & programming'
     },
     {
         question: '_____ tag is an extension to HTML that can enclose any number of Javascript statements.',

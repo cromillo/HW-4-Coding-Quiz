@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Coding Quiz</title>
     <nav class="navbar navbar-light bg-light">
-            <span class="navbar-brand ml-auto h1" id="score">Score</span>
+            <p class="navbar-brand ml-auto h1">Score: <span id='score'>0</span></p>
           </nav>
     <div class="container border border-dark">
         <div class=" text-center m-5 p-5">
@@ -31,14 +31,14 @@
     <h5 id="question" class="mb-3">Question: Change this text</h5>
     <div class="answer-choices" >
         <div class="row">
-                <div class="col-md-6 text-center">
+                <div class="col-md-6 offset-md-3 mt-3">
         <button type ="button" class="answer-choice btn btn-info">Answer Choice</button>
         <button type ="button" class="answer-choice btn btn-info">Answer Choice</button>
         </div>
     </div>
-    <br>
+
         <div class="row">
-                <div class="col-md-6 text-right ml-5">
+                <div class="col-md-6 offset-md-3 mt-3">
         <button type ="button" class="answer-choice btn btn-info">Answer Choice</button>
         <button type ="button" class="answer-choice btn btn-info">Answer Choice</button>
                 </div>    
@@ -47,9 +47,19 @@
 </div>
     <div class="start-button__container">
         <button type='button' id="start-button" class="button btn btn-info">Start Quiz</button>
+   
+        <div class="scorePage">
+        <h3> Your final Score: </h3>
+        <p> Correct: <span id='score'>0</span> </p>
+        <p> Incorrect: </p>
+        </div>
     </div>
     </div>
 </div>
+
+
+
+
 
     <script src='data.js'></script>
     <script src='app.js'></script>
