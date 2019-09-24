@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Coding Quiz</title>
     <nav class="navbar navbar-light bg-light">
+            <div>Timer: <span id="time">01:00</span></div>
+            <div id="mycounter"></div>
             <p class="navbar-brand ml-auto h1">Score: <span id='score'>0</span></p>
           </nav>
     <div class="container border border-dark">
@@ -49,9 +51,9 @@
         <button type='button' id="start-button" class="button btn btn-info">Start Quiz</button>
    
         <div class="scorePage">
-        <h3> Your final Score: </h3>
+        <h3> Your Final Score: </h3>
         <p> Correct: <span id='score'>0</span> </p>
-        <p> Incorrect: </p>
+        <p> Incorrect:<span id='incorrectScore'>0</span> </p>
         </div>
     </div>
     </div>

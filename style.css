@@ -1,3 +1,7 @@
 .container {
     width: 50px;
 }
+
+.scorePage {
+    visibility: hidden;
+}
