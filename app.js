@@ -22,11 +22,15 @@ button.addEventListener('click', function() {
 
 
 });
-
+// Aim is for Final Page to be visible after 5th question is asked.   
+if (data.length < 5)
+    displayFinalPage();
 
 for (let i=0; i<answerButtons.length; i++) {
     answerButtons[i].addEventListener('click', checkAnswer);
+
     
+//Aim is for timer to begin minute countdown once start button is clicked ()
     function startTimer(duration, display) {
         var timer = duration, minutes, seconds;
         setInterval(function () {
@@ -50,7 +54,7 @@ for (let i=0; i<answerButtons.length; i++) {
             display = document.querySelector('#time');
             startTimer(oneMinute, display);
     };
-    
+     
 }
 
 
@@ -61,14 +65,11 @@ for (let i=0; i<answerButtons.length; i++) {
 function changeAnswerButtons(answers) {
     for (let i=0; i<answers.length; i++) {
         answerButtons[i].textContent = answers[i];
-    
-    for (let i=0; i>=answers.length; i) {
-        displayFinalPage();
+      
     }
-        
-        
+            
     }
-}
+
 
 function changeQuestionText(text) {
     //+= append
@@ -82,7 +83,7 @@ function checkAnswer(e) {
         score++;
         console.log("score", score)
         scoreTotal.textContent = score;
-        score = appendChild(scoreTotal);
+
  
     } else {
         incorrectScore++;
@@ -93,7 +94,7 @@ function checkAnswer(e) {
     number = number + 1;
     changeQuestionText(data[number].question);
     changeAnswerButtons(data[number].answers);
-
+    
     
 }
 
