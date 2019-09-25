@@ -20,11 +20,13 @@ button.addEventListener('click', function() {
     instructions.style.display = "none";
     quiz.style.display = "block";
 
+
 });
 
 
 for (let i=0; i<answerButtons.length; i++) {
     answerButtons[i].addEventListener('click', checkAnswer);
+    
     function startTimer(duration, display) {
         var timer = duration, minutes, seconds;
         setInterval(function () {
@@ -40,6 +42,7 @@ for (let i=0; i<answerButtons.length; i++) {
                 timer = duration;
             }
         }, 1000);
+       
     }
     
     window.onload = function () {
@@ -58,6 +61,10 @@ for (let i=0; i<answerButtons.length; i++) {
 function changeAnswerButtons(answers) {
     for (let i=0; i<answers.length; i++) {
         answerButtons[i].textContent = answers[i];
+    
+    for (let i=0; i>=answers.length; i) {
+        displayFinalPage();
+    }
         
         
     }
@@ -102,7 +109,7 @@ function displayFinalPage () {
         scorePage.style.visbility = 'hidden';
     }
     else {
-        scorePage.sytle.visibility = 'visible';
+        scorePage.style.visibility = 'visible';
     }
     }
 

@@ -20,7 +20,7 @@ let data = [
         correct: 'script'
     },
     {
-        question: 'Using ______ statement is how you check for a specfic condition.',
+        question: 'Using ______ statement is how you check for a specific condition.',
         answers:['select','if','switch','for'],
         correct: 'if'
     }
